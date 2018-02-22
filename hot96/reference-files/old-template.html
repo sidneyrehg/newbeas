@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<!-- Start menu bar -->
+<head>
+	<title>{{MessageVersion.Subject}}</title>
+</head>
+<body>
+
+<!-- Meta and styles -->
+<meta content="width=device-width" name="viewport">
+<style type="text/css">
+
+div, p, a, li, td, table {-webkit-text-size-adjust:none;}
+
+.opt-out a { color:#a7a9ab; text-decoration:none; }
+
+a {color:{{colorCodePrimary.value}};}
+
+
+
+@media only screen and (max-width : 500px) {
+
+
+
+/* main wrapper */
+
+table[class="main-wrapper"] {width:100% !important;}
+
+
+
+/* header */
+
+table[class="header"] {width:100% !important;}
+
+td[class="header-left"], td[class="header-right"] {text-align:center !important; padding:10px 5px !important; height:0 !important;}
+
+
+
+/* main image */
+
+td[class="main-img"] img{-ms-interpolation-mode:bicubic; width:100% !important; height:auto !important;}
+
+
+
+/* body */
+
+td[class="main-body"] {width:100% !important; padding: 15px 10px !important;}
+
+td[class="button-container"] {padding:20px 0 !important;}
+
+table[class="button-main"] {margin:auto !important; min-width:150px !important; max-width:200px !important; font-size:20px !important;}
+
+
+
+/* cta banner */
+
+td[class="cta-banner"] {font-size:22px !important;}
+
+
+
+/* gallery */
+
+table[class="gallery-paragraph"] {width:100% !important; border-bottom:1px solid #e7e8e9; padding-bottom:20px;}
+
+td[class="gallery-headline"] {padding:20px 10px 0 10px !important;}
+
+td[class="gallery-img"] {padding:10px 10px 0 10px !important;}
+
+td[class="gallery-img"] img{-ms-interpolation-mode:bicubic; width:100% !important; height:auto !important;}
+
+td[class="gallery-copy"] {padding:10px 10px 0 10px !important;}
+
+td[class="gallery-cta"] {padding:10px 10px 0 10px !important;}
+
+
+
+/* banner */
+
+td[class="banner-img"] {padding:15px 10px !important;}
+
+td[class="banner-img"] img{-ms-interpolation-mode:bicubic; width:100% !important; height:auto !important;}
+
+
+
+/* menu */
+
+table[class="menu-wrapper"], table[class="menu-border"] {width:100% !important; padding: 0 0 0 0;}
+
+table[class="menu-border"] td {border-top:0 !important; border-bottom:0 !important;}
+
+table[class="menu"] {width:100% !important; border-bottom:1px solid #e6e7e8;}
+
+table[class="menu"] td {border-left:0 !important;}
+
+
+
+/* social */
+
+table[class="social-left"], table[class="social-right"] {width:100% !important;}
+
+table[class="social-left"] td {height:0 !important; text-align:center !important; padding:15px 0 10px 0 !important;}
+
+table[class="social-right"] td {height:0 !important; text-align:center !important; padding:0 0 10px 0 !important;}
+
+
+
+/* disclaimer */
+
+td[class="disclaimer-copy"] {padding:20px 0 !important;}
+
+
+
+/* footer */
+
+table[class="footer"], table[class="footer-left"], table[class="footer-right"] {width:100% !important;}
+
+table[class="footer-left"] td {text-align:center !important; padding:10px 0 5px 0 !important;}
+
+table[class="footer-right"] td {text-align:center !important; padding:0 0 10px 0 !important;}
+
+
+
+table[class="mobi-hide"] {display:none !important;}
+
+}
+
+</style>
+<!-- End meta and styles -->
+
+	<table align="center" border="0" cellpadding="0" cellspacing="0" class="menu-border" style="margin-left: auto; margin-right:auto;" width="650">
+		<tr>
+			<td style="border-top:1px solid #a7a9ac; border-bottom:1px solid #a7a9ac;">
+				<table align="center" border="0" cellpadding="0" cellspacing="0" class="menu-wrapper" style="margin-left: auto; margin-right:auto;">
+					<tr>
+
+<!-- Menu bar -->
+            {{#ifAny menu1.isEnabled menu2.isEnabled menu3.isEnabled menu4.isEnabled menu5.isEnabled}}
+  						<td style="text-align:center; padding:8px 0;">
+  							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="115"><![endif]-->
+
+                {{#if menu1.isEnabled}}
+                  <table align="left" border="0" cellpadding="0" cellspacing="0" class="menu" width="115">
+    								<tr>
+    									<td height="30" style="font-family:Verdana, Geneva, sans-serif; font-size:14px; color:#001c59; text-align:center; text-transform:uppercase; vertical-align:middle;">
+    										{{#if menu1.linkUrl}}<a href="{{menu1.linkUrl}}" style="color:#001c59; text-decoration:none;">{{/if}}{{menu1.value}}{{#if menu1.linkUrl}}</a>{{/if}}
+    									</td>
+    								</tr>
+    							</table><!--[if mso]></td><td width="115"><![endif]-->
+                {{/if}}
+                {{#if menu2.isEnabled}}
+                <table align="left" border="0" cellpadding="0" cellspacing="0" class="menu" width="115">
+  								<tr>
+  									<td height="30" style="font-family:Verdana, Geneva, sans-serif; font-size:14px; color:#001c59; text-align:center; text-transform:uppercase; vertical-align:middle; border-left:1px solid #a7a9ac;">
+  										{{#if menu2.linkUrl}}<a href="{{menu2.linkUrl}}" style="color:#001c59; text-decoration:none;">{{/if}}{{menu2.value}}{{#if menu2.linkUrl}}</a>{{/if}}
+  									</td>
+  								</tr>
+  							</table><!--[if mso]></td><td width="115"><![endif]-->
+									{{/if}}
+									{{#if menu3.isEnabled}}
+  							<table align="left" border="0" cellpadding="0" cellspacing="0" class="menu" width="115">
+  								<tr>
+  									<td height="30" style="font-family:Verdana, Geneva, sans-serif; font-size:14px; color:#001c59; text-align:center; text-transform:uppercase; vertical-align:middle; border-left:1px solid #a7a9ac;">
+  										{{#if menu3.linkUrl}}<a href="{{menu3.linkUrl}}" style="color:#001c59; text-decoration:none;">{{/if}}{{menu3.value}}{{#if menu3.linkUrl}}</a>{{/if}}
+  									</td>
+  								</tr>
+  							</table><!--[if mso]></td><td width="115"><![endif]-->
+									{{/if}}
+									{{#if menu4.isEnabled}}
+  							<table align="left" border="0" cellpadding="0" cellspacing="0" class="menu" width="115">
+  								<tr>
+  									<td height="30" style="font-family:Verdana, Geneva, sans-serif; font-size:14px; color:#001c59; text-align:center; text-transform:uppercase; vertical-align:middle; border-left:1px solid #a7a9ac;">
+  										{{#if menu4.linkUrl}}<a href="{{menu4.linkUrl}}" style="color:#001c59; text-decoration:none;">{{/if}}{{menu4.value}}{{#if menu4.linkUrl}}</a>{{/if}}
+  									</td>
+  								</tr>
+  							</table><!--[if mso]></td><td width="115"><![endif]-->
+									{{/if}}
+									{{#if menu5.isEnabled}}
+  							<table align="left" border="0" cellpadding="0" cellspacing="0" class="menu" width="115">
+  								<tr>
+  									<td height="30" style="font-family:Verdana, Geneva, sans-serif; font-size:14px; color:#001c59; text-align:center; text-transform:uppercase; vertical-align:middle; border-left:1px solid #a7a9ac;">
+  										{{#if menu5.linkUrl}}<a href="{{menu5.linkUrl}}" style="color:#001c59; text-decoration:none;">{{/if}}{{menu5.value}}{{#if menu5.linkUrl}}</a>{{/if}}
+  									</td>
+  								</tr>
+  							</table><!--[if mso]></td></tr></table><![endif]-->
+								{{/if}}
+  						</td>
+            {{/ifAny}}
+<!-- End menu bar -->
+
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+<!-- End menu bar -->
+<!-- Start preheader -->
+	<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right:auto;" width="100%">
+		<tr>
+			<td style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size:8px; text-align:center; display:none">{{preheaderText.value}}</td>
+		</tr>
+	</table>
+  <!-- End preheader -->
+  <!-- Start Main Wrapper -->
+	<table align="center" bgcolor="#F6F6F0" border="0" cellpadding="0" cellspacing="0" class="main-wrapper" style="margin-left: auto; margin-right:auto;" width="650">
+		<tr>
+			<td>
+				<!-- Start view web version -->
+				<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right:auto;" width="100%">
+					<tr>
+						<td style="font-family:Helvetica, Arial, sans-serif; color:#a7a9ac; font-size:10px; text-align:center; padding:10px 0;">
+							Email not displaying correctly? <a href="{{MessageVersion.Url}}" style="color:#001c59;">View the web version</a>
+						</td>
+					</tr>
+				</table>
+        <!-- End view web version -->
+        {{#if headerImage.isEnabled}}
+				<!-- Start Header -->
+  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  					<tr>
+  						<td>
+  							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="375"><![endif]-->
+  							<!--[if mso]></td><td width="225"><![endif]-->
+  							<!-- Start Header Right -->
+  							<table align="center" border="0" cellpadding="0" cellspacing="0" class="header" style="width:225px">
+  								<tr>
+  									<td class="header-center" height="100" style="padding:2px 1px 1px 0; text-align:center;">
+  										{{#if headerImage.linkUrl}}<a href="{{headerImage.linkUrl}}">{{/if}}<img alt="{{headerImage.altText}}" border="0" src="{{headerImage.srcUrl}}" style="max-width:650px; height:auto;" width="650">{{#if headerImage.linkUrl}}</a>{{/if}}
+  									</td>
+  								</tr>
+  							</table><!-- End Header Right -->
+  							<!--[if mso]></td></tr></table><![endif]-->
+  						</td>
+  					</tr>
+  				</table>
+        <!-- End Header -->
+				{{/if}}
+				<!-- Start Main Image -->
+				{{#ifAny itemImage1.isEnabled itemDescription1.isEnabled itemButton1.isEnabled}}
+  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  					{{#if itemImage1.isEnabled}}
+    					<tr>
+    						<td align="center" class="main-img" style="padding:2px 0; margin-left: auto; margin-right:auto;">
+    							<img style="max-width:100%; height:auto;">{{#if itemImage1.linkUrl}}<a href="{{itemImage1.linkUrl}}">{{/if}}<img alt="{{itemImage1.altText}}" border="0" src="{{itemImage1.srcUrl}}" width="650">{{#if itemImage1.linkUrl}}</a>{{/if}}
+    						</td>
+    					</tr>
+  					{{/if}}
+  				</table><!-- End Main Image -->
+  				<!-- Start Body copy -->
+  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  					{{#if itemDescription1.isEnabled}}
+    					<tr>
+    						<td class="main-body" style="text-align:left; font-family: Verdana, Geneva, sans-serif; ; font-size:20px; color:#000102; padding: 2px 8px 7px 8px; line-height:24px;">{{{itemDescription1.value}}}</td>
+    					</tr>
+  					{{/if}}
+  				</table><!-- End Body copy -->
+  				<!-- Start CTA button -->
+  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  					{{#if itemButton1.isEnabled}}
+    					<tr>
+    						<td class="button-container" style="padding: 8px 0 11px 0px;">
+    							<table align="center" border="0" cellpadding="0" cellspacing="0" class="button-main" style="min-width:300px;">
+    								<tr>
+    									<td style="background-color:{{colorCodePrimary.value}}; font-family: Verdana, Geneva, sans-serif; font-style: bold; font-size:14px; color:#ffffff; padding:4px 2px; text-align:center; border-radius:5px; -webkit-box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); -moz-box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); text-transform:uppercase;">
+    										{{#if itemButton1.linkUrl}}<a href="{{itemButton1.linkUrl}}" style="color:#ffffff; text-decoration:none;">{{/if}}{{itemButton1.value}}{{#if itemButton1.linkUrl}}</a>{{/if}}
+    									</td>
+    								</tr>
+    							</table>
+    						</td>
+    					</tr>
+  					{{/if}}
+  				</table><!-- End CTA button -->
+				{{/ifAny}}
+				<!-- Start cta banner -->
+				<table align="center" bgcolor="{{colorCodeSecondary.value}}" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="cta-banner" style="padding:5px 3px; font-family: Verdana, Geneva, sans-serif; font-size:21px; font-style: italic; color:#ffffff; text-align:center;">{{{adCTA1.value}}}</td>
+					</tr>
+				</table><!-- End cta banner -->
+				<!-- Start Body Wrapper Row 1-->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="gallery-wrap">
+							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="300"><![endif]-->
+							<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="325">
+								<tr>
+									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
+										<a href="{{itemHeadline2.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline2.value}}</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
+										<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage2.linkUrl}}"><img alt="{{itemImage2.altText}}" border="0" src="{{itemImage2.srcUrl}}" width="300"></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription2.value}}}</td>
+								</tr>
+								<tr>
+									<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
+										<a href="{{itemButton2.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton2.value}}</a>
+									</td>
+								</tr>
+							</table>
+              <!--[if mso]></td><td width="300"><![endif]-->
+							<table align="right" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="300">
+								<tr>
+									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
+										<a href="{{itemHeadline3.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline3.value}}</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-img" style="padding: 1px 1px 1px 1px;">
+										<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage3.linkUrl}}"><img alt="{{itemImage3.altText}}" border="0" src="{{itemImage3.srcUrl}}" width="300"></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription3.value}}}</td>
+								</tr>
+								<tr>
+									<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
+									<a href="{{itemButton3.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton3.value}}</a>
+									</td>
+								</tr>
+							</table><!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!-- End Body Wrapper Row 1 -->
+				<!-- Start Body Wrapper Row 1-->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="gallery-wrap">
+							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="300"><![endif]-->
+							<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="325">
+								<tr>
+									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
+										<a href="{{itemHeadline4.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline4.value}}</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
+										<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage4.linkUrl}}"><img alt="{{itemImage4.altText}}" border="0" src="{{itemImage4.srcUrl}}" width="300"></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription4.value}}}</td>
+								</tr>
+								<tr>
+									<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
+										<a href="{{itemButton4.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton4.value}}</a>
+									</td>
+								</tr>
+							</table>
+              <!--[if mso]></td><td width="300"><![endif]-->
+							<table align="right" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="300">
+								<tr>
+									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
+										<a href="{{itemHeadline5.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline5.value}}</a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
+										<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage5.linkUrl}}"><img alt="{{itemImage5.altText}}" border="0" src="{{itemImage5.srcUrl}}" width="300"></a>
+									</td>
+								</tr>
+								<tr>
+									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription5.value}}}</td>
+								</tr>
+								<tr>
+									<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
+										<a href="{{itemButton5.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton5.value}}</a>
+									</td>
+								</tr>
+							</table>
+              <!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!-- End Body Wrapper Row 1 -->
+				<!-- Start cta banner -->
+				<table align="center" bgcolor="{{colorCodeSecondary.value}}" border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="cta-banner" style="padding:5px 3px; font-family: Verdana, Geneva, sans-serif; font-size:21px; font-style: italic; color:#ffffff; text-align:center;">{{{adCTA2.value}}}</td>
+					</tr>
+				</table><!-- End cta banner -->
+				<!-- Start Body Wrapper Row 1-->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td class="gallery-wrap">
+							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="100%"><![endif]-->
+							<br>
+							<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="100%">
+								<tr>
+									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{bodyText.value}}}</td>
+								</tr>
+							</table><!-- End Body Wrapper Row 1 -->
+							<!-- Start Social Wrapper -->
+							<table border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td>
+										<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="300"><![endif]-->
+										<table align="left" border="0" cellpadding="0" cellspacing="0" class="social-left" width="300">
+											<tr>
+												<td height="80" style="font-family:Helvetica, Arial, sans-serif; font-size:21px; color:#a7a9ac; padding: 0 0 0 28px;">Connect With Us!</td>
+											</tr>
+										</table><!--[if mso]></td><td width="325"><![endif]-->
+										<table align="center" border="0" cellpadding="0" cellspacing="0" class="social-right" width="300">
+											<tr>
+												<td height="80" style="padding:0 28px 0 0; text-align:right;">
+													<a href="{{facebookPageUrl.value}}"><img alt="Facebook Icon" border="0" height="40" src="https://media.secondstreetapp.com/77265?width=300&height=120" style="margin:0 6px 0 0;" width="40"></a> <a href="{{twitterProfileUrl.value}}"><img alt="Twitter Icon" border="0" height="40" src="https://media.secondstreetapp.com/77267?width=300&height=120" style="margin:0 6px 0 0;" width="40"></a> <a href="{{instagramProfileUrl.value}}"><img alt="Instagram Icon" border="0" height="40" src="https://media.secondstreetapp.com/77275?width=300&height=120" style="margin:0 6px 0 0;" width="40"></a>
+												</td>
+											</tr>
+										</table><!--[if mso]></td></tr></table><![endif]-->
+									</td>
+								</tr>
+							</table><!-- End Social Wrapper -->
+							<!-- Start disclaimer text -->
+							<table bgcolor="#E7E8E9" border="0" cellpadding="0" cellspacing="0" width="100%">
+								<tr>
+									<td class="disclaimer-copy" style="font-family: Helvetica, Arial, sans-serif; font-size:9px; color:#a7a9ac;; padding:20px 10px;">{{{smallPrint.value}}}</td>
+								</tr>
+							</table><!-- End disclaimer text --><!-- Start Footer Info -->
+							<table bgcolor="#E7E8E9" border="0" cellpadding="0" cellspacing="0" width="650">
+								<tr>
+									<td>
+										<!--[if mso]><table width="650" border="0" cellspacing="0" cellpadding="0"><tr><td width="325"><![endif]-->
+										<table align="center" border="0" cellpadding="0" cellspacing="0" class="footer-center" style="width:325px">
+											<tr>
+												<td class="opt-out" style="text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#a7a9ab; padding:10px 0 10px 10px; text-decoration:none;">{{System.OptOutText}}</td>
+											</tr>
+										</table><!--[if mso]></td><td width="325"><![endif]-->
+										<table align="left" border="0" cellpadding="0" cellspacing="0" class="footer-right" style="width:325px">
+											<tr>
+												<td style="text-align:left; font-family:Arial, Helvetica, sans-serif; font-size:9px; color:#a7a9ab; padding:10px;">{{Organization.Name}} {{Organization.Address}}</td>
+											</tr>
+										</table><!--[if mso]></td></tr></table><![endif]-->
+									</td>
+								</tr>
+							</table><!-- End Footer Info -->
+							<!-- Fix for gmail app -->
+							<table border="0" cellpadding="0" cellspacing="0" class="mobi-hide" width="650">
+								<tr>
+									<td height="1px; min-width: 650px;" style="background-color:#dddddd; line-height:1px;"><img height="1" src="https://media.secondstreetapp.com/77691?width=1" style="max-height:1px; min-height:1px; display:inline; width:650px; min-width:650px;" width="650"></td>
+								</tr>
+							</table><!-- End Fix for gmail app -->
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr><!-- End Main Wrapper -->
+	</table>
+</body>
+</html>
