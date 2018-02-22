@@ -285,11 +285,13 @@ table[class="mobi-hide"] {display:none !important;}
 											</td>
 										</tr>
 									{{/if}}
+									{{#if itemImage2.isEnabled}}
 									<tr>
 										<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
-											<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage2.linkUrl}}"><img alt="{{itemImage2.altText}}" border="0" src="{{itemImage2.srcUrl}}" width="300"></a>
+											<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;">{{#if itemImage2.linkUrl}}<a href="{{itemImage2.linkUrl}}">{{/if}}<img alt="{{itemImage2.altText}}" border="0" src="{{itemImage2.srcUrl}}" width="300">{{#if itemImage2.linkUrl}}</a>{{/if}}
 										</td>
 									</tr>
+									{{/if}}
 									<tr>
 										<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription2.value}}}</td>
 									</tr>
