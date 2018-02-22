@@ -292,9 +292,11 @@ table[class="mobi-hide"] {display:none !important;}
 										</td>
 									</tr>
 									{{/if}}
+									{{#if itemDescription2.isEnabled}}
 									<tr>
 										<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription2.value}}}</td>
 									</tr>
+									{{/if}}
 									<tr>
 										<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
 											<a href="{{itemButton2.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton2.value}}</a>
