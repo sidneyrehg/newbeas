@@ -191,16 +191,13 @@ table[class="mobi-hide"] {display:none !important;}
 				</table>
 			</td>
 		</tr>
-	</table>
-<!-- End menu bar -->
+	</table><!-- End menu bar -->
 <!-- Start preheader -->
 	<table align="center" border="0" cellpadding="0" cellspacing="0" style="margin-left: auto; margin-right:auto;" width="100%">
 		<tr>
 			<td style="font-family:Helvetica, Arial, sans-serif; color:#ffffff; font-size:8px; text-align:center; display:none">{{preheaderText.value}}</td>
 		</tr>
-	</table>
-  <!-- End preheader -->
-  <!-- Start Main Wrapper -->
+	</table><!-- End preheader --><!-- Start Main Wrapper -->
 	<table align="center" bgcolor="#F6F6F0" border="0" cellpadding="0" cellspacing="0" class="main-wrapper" style="margin-left: auto; margin-right:auto;" width="650">
 		<tr>
 			<td>
@@ -211,64 +208,62 @@ table[class="mobi-hide"] {display:none !important;}
 							Email not displaying correctly? <a href="{{MessageVersion.Url}}" style="color:#001c59;">View the web version</a>
 						</td>
 					</tr>
-				</table>
-        <!-- End view web version -->
-        {{#if headerImage.isEnabled}}
+				</table><!-- End view web version -->
+{{#if headerImage.isEnabled}}
 				<!-- Start Header -->
-  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  					<tr>
-  						<td>
-  							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="375"><![endif]-->
-  							<!--[if mso]></td><td width="225"><![endif]-->
-  							<!-- Start Header Right -->
-  							<table align="center" border="0" cellpadding="0" cellspacing="0" class="header" style="width:225px">
-  								<tr>
-  									<td class="header-center" height="100" style="padding:2px 1px 1px 0; text-align:center;">
-  										{{#if headerImage.linkUrl}}<a href="{{headerImage.linkUrl}}">{{/if}}<img alt="{{headerImage.altText}}" border="0" src="{{headerImage.srcUrl}}" style="max-width:650px; height:auto;" width="650">{{#if headerImage.linkUrl}}</a>{{/if}}
-  									</td>
-  								</tr>
-  							</table><!-- End Header Right -->
-  							<!--[if mso]></td></tr></table><![endif]-->
-  						</td>
-  					</tr>
-  				</table>
-        <!-- End Header -->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<tr>
+						<td>
+							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="375"><![endif]-->
+							<!--[if mso]></td><td width="225"><![endif]-->
+							<!-- Start Header Right -->
+							<table align="center" border="0" cellpadding="0" cellspacing="0" class="header" style="width:225px">
+								<tr>
+									<td class="header-center" height="100" style="padding:2px 1px 1px 0; text-align:center;">
+										{{#if headerImage.linkUrl}}<a href="{{headerImage.linkUrl}}">{{/if}}<img alt="{{headerImage.altText}}" border="0" src="{{headerImage.srcUrl}}" style="max-width:650px; height:auto;" width="650">{{#if headerImage.linkUrl}}</a>{{/if}}
+									</td>
+								</tr>
+							</table><!-- End Header Right -->
+							<!--[if mso]></td></tr></table><![endif]-->
+						</td>
+					</tr>
+				</table><!-- End Header -->
 				{{/if}}
 				<!-- Start Main Image -->
 				{{#ifAny itemImage1.isEnabled itemDescription1.isEnabled itemButton1.isEnabled}}
-  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  					{{#if itemImage1.isEnabled}}
-    					<tr>
-    						<td align="center" class="main-img" style="padding:2px 0; margin-left: auto; margin-right:auto;">
-    							<img style="max-width:100%; height:auto;">{{#if itemImage1.linkUrl}}<a href="{{itemImage1.linkUrl}}">{{/if}}<img alt="{{itemImage1.altText}}" border="0" src="{{itemImage1.srcUrl}}" width="650">{{#if itemImage1.linkUrl}}</a>{{/if}}
-    						</td>
-    					</tr>
-  					{{/if}}
-  				</table><!-- End Main Image -->
-  				<!-- Start Body copy -->
-  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  					{{#if itemDescription1.isEnabled}}
-    					<tr>
-    						<td class="main-body" style="text-align:left; font-family: Verdana, Geneva, sans-serif; ; font-size:20px; color:#000102; padding: 2px 8px 7px 8px; line-height:24px;">{{{itemDescription1.value}}}</td>
-    					</tr>
-  					{{/if}}
-  				</table><!-- End Body copy -->
-  				<!-- Start CTA button -->
-  				<table border="0" cellpadding="0" cellspacing="0" width="100%">
-  					{{#if itemButton1.isEnabled}}
-    					<tr>
-    						<td class="button-container" style="padding: 8px 0 11px 0px;">
-    							<table align="center" border="0" cellpadding="0" cellspacing="0" class="button-main" style="min-width:300px;">
-    								<tr>
-    									<td style="background-color:{{colorCodePrimary.value}}; font-family: Verdana, Geneva, sans-serif; font-style: bold; font-size:14px; color:#ffffff; padding:4px 2px; text-align:center; border-radius:5px; -webkit-box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); -moz-box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); text-transform:uppercase;">
-    										{{#if itemButton1.linkUrl}}<a href="{{itemButton1.linkUrl}}" style="color:#ffffff; text-decoration:none;">{{/if}}{{itemButton1.value}}{{#if itemButton1.linkUrl}}</a>{{/if}}
-    									</td>
-    								</tr>
-    							</table>
-    						</td>
-    					</tr>
-  					{{/if}}
-  				</table><!-- End CTA button -->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					{{#if itemImage1.isEnabled}}
+					<tr>
+						<td align="center" class="main-img" style="padding:2px 0; margin-left: auto; margin-right:auto;">
+							<img style="max-width:100%; height:auto;">{{#if itemImage1.linkUrl}}<a href="{{itemImage1.linkUrl}}">{{/if}}<img alt="{{itemImage1.altText}}" border="0" src="{{itemImage1.srcUrl}}" width="650">{{#if itemImage1.linkUrl}}</a>{{/if}}
+						</td>
+					</tr>
+					{{/if}}
+				</table><!-- End Main Image -->
+				<!-- Start Body copy -->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					{{#if itemDescription1.isEnabled}}
+					<tr>
+						<td class="main-body" style="text-align:left; font-family: Verdana, Geneva, sans-serif; ; font-size:20px; color:#000102; padding: 2px 8px 7px 8px; line-height:24px;">{{{itemDescription1.value}}}</td>
+					</tr>
+					{{/if}}
+				</table><!-- End Body copy -->
+				<!-- Start CTA button -->
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					{{#if itemButton1.isEnabled}}
+					<tr>
+						<td class="button-container" style="padding: 8px 0 11px 0px;">
+							<table align="center" border="0" cellpadding="0" cellspacing="0" class="button-main" style="min-width:300px;">
+								<tr>
+									<td style="background-color:{{colorCodePrimary.value}}; font-family: Verdana, Geneva, sans-serif; font-style: bold; font-size:14px; color:#ffffff; padding:4px 2px; text-align:center; border-radius:5px; -webkit-box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); -moz-box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); box-shadow: 4px 4px 2px 0px rgba(176,176,176,1); text-transform:uppercase;">
+										{{#if itemButton1.linkUrl}}<a href="{{itemButton1.linkUrl}}" style="color:#ffffff; text-decoration:none;">{{/if}}{{itemButton1.value}}{{#if itemButton1.linkUrl}}</a>{{/if}}
+									</td>
+								</tr>
+							</table>
+						</td>
+					</tr>
+					{{/if}}
+				</table><!-- End CTA button -->
 				{{/ifAny}}
 				<!-- Start cta banner -->
 				<table align="center" bgcolor="{{colorCodeSecondary.value}}" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -281,47 +276,61 @@ table[class="mobi-hide"] {display:none !important;}
 					<tr>
 						<td class="gallery-wrap">
 							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="300"><![endif]-->
-							<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="325">
-								<tr>
-									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
-										<a href="{{itemHeadline2.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline2.value}}</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
-										<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage2.linkUrl}}"><img alt="{{itemImage2.altText}}" border="0" src="{{itemImage2.srcUrl}}" width="300"></a>
-									</td>
-								</tr>
-								<tr>
-									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription2.value}}}</td>
-								</tr>
-								<tr>
-									<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
-										<a href="{{itemButton2.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton2.value}}</a>
-									</td>
-								</tr>
-							</table>
+							{{#ifAny itemHeadline2.isEnabled itemImage2.isEnabled itemDescription2.isEnabled itemButton2.isEnabled}}
+								<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="325">
+									{{#if itemHeadline2.isEnabled}}
+										<tr>
+											<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
+												<a href="{{itemHeadline2.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline2.value}}</a>
+											</td>
+										</tr>
+									{{/if}}
+									{{#if itemImage2.isEnabled}}
+										<tr>
+											<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
+												<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;">{{#if itemImage2.linkUrl}}<a href="{{itemImage2.linkUrl}}">{{/if}}<img alt="{{itemImage2.altText}}" border="0" src="{{itemImage2.srcUrl}}" width="300">{{#if itemImage2.linkUrl}}</a>{{/if}}
+											</td>
+										</tr>
+									{{/if}}
+									{{#if itemDescription2.isEnabled}}
+										<tr>
+											<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription2.value}}}</td>
+										</tr>
+									{{/if}}
+									{{#if itemButton2.isEnabled}}
+										<tr>
+											<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
+												<a href="{{itemButton2.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton2.value}}</a>
+											</td>
+										</tr>
+									{{/if}}
+								</table>
+							{{/ifAny}}
               <!--[if mso]></td><td width="300"><![endif]-->
-							<table align="right" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="300">
-								<tr>
-									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
-										<a href="{{itemHeadline3.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline3.value}}</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="gallery-img" style="padding: 1px 1px 1px 1px;">
-										<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage3.linkUrl}}"><img alt="{{itemImage3.altText}}" border="0" src="{{itemImage3.srcUrl}}" width="300"></a>
-									</td>
-								</tr>
-								<tr>
-									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription3.value}}}</td>
-								</tr>
-								<tr>
-									<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
-									<a href="{{itemButton3.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton3.value}}</a>
-									</td>
-								</tr>
-							</table><!--[if mso]></td></tr></table><![endif]-->
+							{{#ifAny itemHeadline3.isEnabled itemImage3.isEnabled itemDescription3.isEnabled itemButton3.isEnabled}}
+								<table align="right" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="300">
+									{{#if itemHeadline3.isEnabled}}
+									<tr>
+										<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
+											<a href="{{itemHeadline3.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline3.value}}</a>
+										</td>
+									</tr>
+									{{/if}}
+									<tr>
+										<td class="gallery-img" style="padding: 1px 1px 1px 1px;">
+											<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage3.linkUrl}}"><img alt="{{itemImage3.altText}}" border="0" src="{{itemImage3.srcUrl}}" width="300"></a>
+										</td>
+									</tr>
+									<tr>
+										<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription3.value}}}</td>
+									</tr>
+									<tr>
+										<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
+										<a href="{{itemButton3.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton3.value}}</a>
+										</td>
+									</tr>
+								</table><!--[if mso]></td></tr></table><![endif]-->
+							{{/if}}
 						</td>
 					</tr>
 				</table><!-- End Body Wrapper Row 1 -->
@@ -330,27 +339,37 @@ table[class="mobi-hide"] {display:none !important;}
 					<tr>
 						<td class="gallery-wrap">
 							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="300"><![endif]-->
-							<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="325">
-								<tr>
-									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
-										<a href="{{itemHeadline4.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline4.value}}</a>
-									</td>
-								</tr>
-								<tr>
-									<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
-										<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;"><a href="{{itemImage4.linkUrl}}"><img alt="{{itemImage4.altText}}" border="0" src="{{itemImage4.srcUrl}}" width="300"></a>
-									</td>
-								</tr>
-								<tr>
-									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription4.value}}}</td>
-								</tr>
-								<tr>
-									<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
-										<a href="{{itemButton4.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton4.value}}</a>
-									</td>
-								</tr>
-							</table>
-              <!--[if mso]></td><td width="300"><![endif]-->
+							{{#ifAny itemHeadline4.isEnabled itemImage4.isEnabled itemDescription4.isEnabled itemButton4.isEnabled}}
+								<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="325">
+									{{#if itemHeadline4.isEnabled}}
+										<tr>
+											<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
+												<a href="{{itemHeadline4.linkUrl}}" style="color:#001c59; text-decoration:none;">{{itemHeadline4.value}}</a>
+											</td>
+										</tr>
+									{{/if}}
+									{{#if itemImage4.isEnabled}}
+										<tr>
+											<td class="gallery-img" style="padding: 1px 1px 1px 5px;">
+												<img style="border-bottom:5px solid #001c59; max-width:100%; height:auto;">{{#if itemImage4.linkUrl}}<a href="{{itemImage4.linkUrl}}">{{/if}}<img alt="{{itemImage4.altText}}" border="0" src="{{itemImage4.srcUrl}}" width="300">{{#if itemImage4.linkUrl}}</a>{{/if}}
+											</td>
+										</tr>
+									{{/if}}
+									{{#if itemDescription4.isEnabled}}
+										<tr>
+											<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{itemDescription4.value}}}</td>
+										</tr>
+									{{/if}}
+									{{#if itemButton4.isEnabled}}
+										<tr>
+											<td class="gallery-cta" style="font-family: Helvetica, Arial, sans-serif; font-size:12px; font-weight:bold; color:#000102; text-transform:uppercase; padding:10px 12px 5px 5px;">
+												<a href="{{itemButton4.linkUrl}}" style="color:#000102; text-decoration:none;">{{itemButton4.value}}</a>
+											</td>
+										</tr>
+									{{/if}}
+								</table>
+							{{/ifAny}}
+							<!--[if mso]></td><td width="300"><![endif]-->
 							<table align="right" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="300">
 								<tr>
 									<td class="gallery-headline" style="font-family: Verdana, Geneva, sans-serif; font-size:16px; font-weight:bold; color:#001c59; padding:10px 12px 5px 5px">
