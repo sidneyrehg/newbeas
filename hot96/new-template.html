@@ -266,11 +266,14 @@ table[class="mobi-hide"] {display:none !important;}
 				</table><!-- End CTA button -->
 				{{/ifAny}}
 				<!-- Start cta banner -->
-				<table align="center" bgcolor="{{colorCodeSecondary.value}}" border="0" cellpadding="0" cellspacing="0" width="100%">
-					<tr>
-						<td class="cta-banner" style="padding:5px 3px; font-family: Verdana, Geneva, sans-serif; font-size:21px; font-style: italic; color:#ffffff; text-align:center;">{{{adCTA1.value}}}</td>
-					</tr>
-				</table><!-- End cta banner -->
+				{{#if adCTA1.isEnabled}}
+					<table align="center" bgcolor="{{colorCodeSecondary.value}}" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td class="cta-banner" style="padding:5px 3px; font-family: Verdana, Geneva, sans-serif; font-size:21px; font-style: italic; color:#ffffff; text-align:center;">{{{adCTA1.value}}}</td>
+						</tr>
+					</table>
+				{{/if}}
+				<!-- End cta banner -->
 				<!-- Start Body Wrapper Row 1-->
 				{{#ifAny itemHeadline2.isEnabled itemImage2.isEnabled itemDescription2.isEnabled itemButton2.isEnabled itemHeadline3.isEnabled itemImage3.isEnabled itemDescription3.isEnabled itemButton3.isEnabled}}
 					<table border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -418,11 +421,14 @@ table[class="mobi-hide"] {display:none !important;}
 				<!-- End Body Wrapper Row 2 -->
 
 				<!-- Start cta banner -->
-				<table align="center" bgcolor="{{colorCodeSecondary.value}}" border="0" cellpadding="0" cellspacing="0" width="100%">
-					<tr>
-						<td class="cta-banner" style="padding:5px 3px; font-family: Verdana, Geneva, sans-serif; font-size:21px; font-style: italic; color:#ffffff; text-align:center;">{{{adCTA2.value}}}</td>
-					</tr>
-				</table><!-- End cta banner -->
+				{{#if adCTA2.isEnabled}}
+					<table align="center" bgcolor="{{colorCodeSecondary.value}}" border="0" cellpadding="0" cellspacing="0" width="100%">
+						<tr>
+							<td class="cta-banner" style="padding:5px 3px; font-family: Verdana, Geneva, sans-serif; font-size:21px; font-style: italic; color:#ffffff; text-align:center;">{{{adCTA2.value}}}</td>
+						</tr>
+					</table>
+				{{/if}}
+				<!-- End cta banner -->
 				<!-- Start Body Wrapper Row 1-->
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
 					<tr>
