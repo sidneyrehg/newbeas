@@ -429,17 +429,20 @@ table[class="mobi-hide"] {display:none !important;}
 					</table>
 				{{/if}}
 				<!-- End cta banner -->
-				<!-- Start Body Wrapper Row 1-->
+				<!-- Start Body Wrapper -->
 				<table border="0" cellpadding="0" cellspacing="0" width="100%">
 					<tr>
 						<td class="gallery-wrap">
 							<!--[if mso]><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td width="100%"><![endif]-->
 							<br>
-							<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="100%">
-								<tr>
-									<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{bodyText.value}}}</td>
-								</tr>
-							</table><!-- End Body Wrapper Row 1 -->
+							{{#if bodyText.isEnabled}}
+								<table align="left" border="0" cellpadding="0" cellspacing="0" class="gallery-paragraph" width="100%">
+									<tr>
+										<td class="gallery-copy" style="font-family:Helvetica, Arial, sans-serif; font-size:16px; color:#000102; line-height:20px; padding:1px 8px 10px 5px">{{{bodyText.value}}}</td>
+									</tr>
+								</table>
+							{{/if}}
+							<!-- End Body Wrapper -->
 							<!-- Start Social Wrapper -->
 							<table border="0" cellpadding="0" cellspacing="0" width="100%">
 								<tr>
